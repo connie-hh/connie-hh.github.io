@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>☘︎ connie h.</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.4;
+            background-color: #fff;
+        }
+        h2 {
+            font-weight: 500;
+            margin: 17px 0 15px;
+        }
+        h4 {
+            font-family: "Helvetica Neue", sans-serif;
+            font-weight: 500;
+            margin: 15px 0 5px;
+        }
+        a {
+            color: #123622;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            min-height: 100vh;
+        }
+        .green { color: #025539; }
+        .left-panel {
+            width: 18rem;
+            padding: 30px;
+            box-sizing: border-box;
+            position: sticky;
+            top: 0;
+            color: #025539;
+            height: 100vh;
+        }
+        .italics { font-style: italic; }
+        .right-panel {
+            max-width: 800px;
+            width: 65%;
+            padding: 80px 150px 80px 0;
+            box-sizing: border-box;
+        }
+        .less-bold { font-weight: 500; }
+        .paper-title { color: #368168; }
+        ::selection { background: #F8E3E4; }
+        
+        /* Design page styles */
+        .image-wrapper {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .image-wrapper img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            aspect-ratio: 8.5 / 11;
+            object-fit: cover;
+            background-color: #f5f5f5;
+            border: 1px solid #e0e0e0;
+        }
+        .hidden {
+            display: none;
+        }
+        
+        @media screen and (min-width: 800px) {
+            .container { margin: 0 50px; }
+        }
+        @media screen and (max-width: 800px) {
+            .container { flex-direction: column; }
+            .left-panel {
+                width: 100%;
+                height: auto;
+                padding: 20px;
+                position: relative;
+            }
+            .right-panel {
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h2><a onclick="showResearch()" style="cursor: pointer;">CONNIE HONG</a></h2>
+            <a href="https://scholar.google.com/citations?user=RdFM4AMAAAAJ&hl=en&oi=ao">scholar</a>
+            <a href="https://github.com/chenmo8"> ☘︎ github</a>
+            <a onclick="toggleView()">  ☘︎ design </a>
+            <p></p>
+        </div>
+        <div class="right-panel">
+            <div id="research-content">
+                I'm passionate about developing ML learning theory in light of strategic and social interactions: specifically, I'm excited to intersect topics from game theory and statistics in order to inform more robust and fair algorithms! 
+                <br><br>
+                Currently, I'm a Master's student in Management Sciences & Engineering at Stanford, where I have the privilege to be mentored by Lee Cohen and Professor Omer Reingold. 
+                <br><br>
+                During my undergraduate studies, I extended work in strategic classification to design algorithmic interventions that enhanced both accuracy and fairness in resume-screening systems, accounting for the potential use of LLMs by job applicants. 
+                <br><br>
+                Previously, I've also built AI-Agent evaluation tools with <a href="https://www.runloop.ai/landing/public-benchmark">Runloop AI</a>, and OCR pipelines for the <a href="https://www.census.gov/programs-surveys/dcdl.html">U.S. Census Bureau</a>.
+                
+                <h4 class="green">Research Interests</h4>
+                <p class="italics">Economics and Computation, Algorithmic Fairness, Machine Learning Theory.</p> 
+
+                <h4 class="green">Publications</h4> 
+                <span class="paper-title" style="cursor:pointer;" 
+                    onclick="window.open('https://arxiv.org/pdf/2502.13221', '_blank')">
+                    Two Tickets are Better than One: Fair and Accurate Hiring Under Strategic LLM Manipulations.
+                </span><br>
+                Cohen, L., Hsieh J., <span class="less-bold">Hong, C.</span>, Shen, J.          
+                <br>
+                <span style="color:#5a5a5a">ICML 2025</span>, <span style="color:#5a5a5a">Swap Regret and Strategic Learning Workshop @ EC 2025</span> 
+
+                <h4 class="green">Misc. Writing</h4> 
+                
+                <span class="paper-title" style="cursor:pointer;" 
+                    onclick="window.open('https://web.stanford.edu/~conniehg/capstone/DS_Capstone.pdf', '_blank')">How Do Disparities Emerge? Unpacking Confidence and Accuracy Gaps by Gender and Socioeconomic Status.</span> 
+                <br>
+                <span class="less-bold">Hong, C</span>.          
+                <br>
+                <span style="color:#5a5a5a">Data Science B.S. Capstone Project (2025).</span> 
+                <br><br>
+                 <span class="paper-title" style="cursor:pointer;" 
+                    onclick="window.open('https://web.stanford.edu/~conniehg/CS229__Project_Final_Report_Fall_2024__1_.pdf', '_blank')">Spatiotemporal Modeling of Chicago Traffic Accidents with Convolutional and LSTM Networks.</span> 
+                <br>
+                Gu, Z., <span class="less-bold">Hong, C</span>, Torrecilla, I.         
+                <br>
+                <span style="color:#5a5a5a">Final Project for CS 229: Machine Learning (2024).</span> 
+                
+                <h4 class="green">Teaching</h4> 
+                I'm a current CA for <span style="color:#5a5a5a">MATH51: Linear Algebra and Multivariable Calculus</span> as a part of Stanford's ACE Program, which allows me to foster my passion for making mathematics accessible to all!
+            </div>
+            
+            <div id="design-content" class="hidden">
+                <div class="image-wrapper">
+                    <img src="france.png" alt="Design 5">
+                </div>
+                <div class="image-wrapper">
+                    <img src="english.png" alt="Design 1">
+                </div>
+                <div class="image-wrapper">
+                    <img src="dcl.png" alt="Design 2">
+                </div>
+                <div class="image-wrapper">
+                    <img src="coffee.png" alt="Design 3">
+                </div>
+                <div class="image-wrapper">
+                    <img src="capitals2023poster.png" alt="Design 4">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function showResearch() {
+            const researchContent = document.getElementById('research-content');
+            const designContent = document.getElementById('design-content');
+            researchContent.classList.remove('hidden');
+            designContent.classList.add('hidden');
+        }
+        
+        function toggleView() {
+            const researchContent = document.getElementById('research-content');
+            const designContent = document.getElementById('design-content');
+            
+            if (researchContent.classList.contains('hidden')) {
+                researchContent.classList.remove('hidden');
+                designContent.classList.add('hidden');
+            } else {
+                researchContent.classList.add('hidden');
+                designContent.classList.remove('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
